@@ -1,13 +1,21 @@
 package com.bka.music;
 
-public class MusicPlayer {
+import java.util.List;
 
-    Music music;
-    public MusicPlayer(Music music) {
-        this.music = music;
+public class MusicPlayer {
+    List<Music> musicList;
+
+    public MusicPlayer(List<Music> musicList) {
+        this.musicList = musicList;
     }
 
     public void playMusic() {
-        music.play();
+        double d = Math.round(Math.random());
+        System.out.println(d);
+        if (d == 0) {
+            musicList.get(0).play();
+        } else {
+            musicList.get(1).play();
+        }
     }
 }

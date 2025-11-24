@@ -8,13 +8,16 @@
     	http://www.springframework.org/schema/context
     	http://www.springframework.org/schema/context/spring-context.xsd">
 
-     <bean
-    id="musicPlayer"
-    class="com.bka.music.MusicPlayer">
-        <constructor-arg ref="rock"/>
-    </bean>
+<!--    <context:component-scan base-package="com.bka"/>-->
+<!--    <context:property-placeholder location="musicPlayer.properties"/>-->
+<!--    -->
+<!--     <bean-->
+<!--    id="musicPlayer"-->
+<!--    class="com.bka.music.MusicPlayer">-->
+<!--        <constructor-arg ref="rock"/>-->
+<!--    </bean>-->
 
-    <bean id="classic" class="com.bka.music.ClassicalMusic"/>
-    <bean id="rock" class="com.bka.music.RockMusic"/>
+<!--    <bean id="classic" class="com.bka.music.ClassicalMusic"/>-->
+<!--    <bean id="rock" class="com.bka.music.RockMusic"/>-->
 
 </beans>
